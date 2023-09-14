@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Quicksand', ...defaultTheme.fontFamily.sans]
+        sans: ['var(--font-sans)'],
       },
       animation:{
         fade: 'fadeOut 5s ease-in-out',

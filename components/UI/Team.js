@@ -10,7 +10,7 @@ const team = [
     position: "Community Development Officer",
   },
   {
-    name: "Wesley Kijedi",
+    name: "Judy Wangare",
     image: "/images/team/judy.png",
     position: "Environmentalist & Climate Change Champion",
   },
