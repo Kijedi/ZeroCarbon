@@ -120,14 +120,14 @@ export default function About() {
         </div>
         <p className="font-medium py-10 text-gray-700 text-2xl">The Team</p>
         <div className="flex gap-10 flex-wrap">
-          <div class="group w-[330px] h-[400px]  aspect-h-1 aspect-w-1 rounded-3xl relative before:absolute before:bottom-0 before:h-52 before:inset-x-0 ease-in-out before:z-10 transition-all duration-700 overflow-hidden before:bg-gradient-to-t before:from-black before:to-transparent">
+          <div className="group w-[330px] h-[400px]  aspect-h-1 aspect-w-1 rounded-3xl relative before:absolute before:bottom-0 before:h-52 before:inset-x-0 ease-in-out before:z-10 transition-all duration-700 overflow-hidden before:bg-gradient-to-t before:from-black before:to-transparent">
             <Image
               fill
               src={
                 "https://studio.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fleslie-alexander.cf5840d1.jpg&w=3840&q=75"
               }
               alt="Front of men&#039;s Basic Tee in black."
-              class=" w-full z-2 rounded-3xl object-cover object-center h-full grayscale hover:grayscale-0 delay-500  scale-105 hover:scale-125 transition ease-in-out duration-300"
+              className=" w-full z-2 rounded-3xl object-cover object-center h-full grayscale hover:grayscale-0 delay-500  scale-105 hover:scale-125 transition ease-in-out duration-300"
             />
             <div className="absolute bottom-8 left-8 text-white z-20">
               <p className="text-md lg:text-lg py-2 font-medium">
@@ -136,14 +136,14 @@ export default function About() {
               <p className="text-xs">Founder / CEO</p>
             </div>
           </div>
-          <div class="group w-[330px] h-[400px]  aspect-h-1 aspect-w-1 rounded-3xl relative before:absolute before:bottom-0 before:h-52 before:inset-x-0 ease-in-out before:z-10 transition-all duration-700 overflow-hidden before:bg-gradient-to-t before:from-black before:to-transparent">
+          <div className="group w-[330px] h-[400px]  aspect-h-1 aspect-w-1 rounded-3xl relative before:absolute before:bottom-0 before:h-52 before:inset-x-0 ease-in-out before:z-10 transition-all duration-700 overflow-hidden before:bg-gradient-to-t before:from-black before:to-transparent">
             <Image
               fill
               src={
                 "https://studio.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmichael-foster.00319162.jpg&w=3840&q=75"
               }
               alt="Front of men&#039;s Basic Tee in black."
-              class=" w-full z-2 rounded-3xl object-cover object-center h-full grayscale hover:grayscale-0 delay-500  scale-105 hover:scale-125 transition ease-in-out duration-300"
+              className=" w-full z-2 rounded-3xl object-cover object-center h-full grayscale hover:grayscale-0 delay-500  scale-105 hover:scale-125 transition ease-in-out duration-300"
             />
             <div className="absolute bottom-8 left-8 text-white z-20">
               <p className="text-md lg:text-lg py-2 font-medium">
@@ -152,14 +152,14 @@ export default function About() {
               <p className="text-xs">Founder / CEO</p>
             </div>
           </div>{" "}
-          <div class="group  w-[330px] h-[400px]  aspect-h-1 aspect-w-1 rounded-3xl relative before:absolute before:bottom-0 before:h-52 before:inset-x-0 ease-in-out before:z-10 transition-all duration-700 overflow-hidden before:bg-gradient-to-t before:from-black before:to-transparent">
+          <div className="group  w-[330px] h-[400px]  aspect-h-1 aspect-w-1 rounded-3xl relative before:absolute before:bottom-0 before:h-52 before:inset-x-0 ease-in-out before:z-10 transition-all duration-700 overflow-hidden before:bg-gradient-to-t before:from-black before:to-transparent">
             <Image
               fill
               src={
                 "https://studio.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmichael-foster.00319162.jpg&w=3840&q=75"
               }
               alt="Front of men&#039;s Basic Tee in black."
-              class=" w-full z-2 rounded-3xl object-cover object-center h-full grayscale hover:grayscale-0 delay-500  scale-105 hover:scale-125 transition ease-in-out duration-300"
+              className=" w-full z-2 rounded-3xl object-cover object-center h-full grayscale hover:grayscale-0 delay-500  scale-105 hover:scale-125 transition ease-in-out duration-300"
             />
             <div className="absolute bottom-8 left-8 text-white z-20">
               <p className="text-md lg:text-lg py-2 font-medium">
