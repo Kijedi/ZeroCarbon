@@ -216,13 +216,12 @@ export default function About() {
       {/* End of Newsletter */}
 
       {/* Start of Footer */}
-      <div className="m-28 ">
-        <div className="flex justify-between border-t py-10 ">
-          <div className="relative h-20 w-20">
-            <Image fill src={"/images/logo.png"} />
-          </div>
-
-          <p className="text-sm">© Zero Carbon Africa. 2023</p>
+      <div className="mx-28 ">
+        <div className="flex justify-between border-t py-10 items-center">
+          <Image width={120} height={120} src={"/images/logo.png"} />
+          <p className="text-sm">
+            © Zero Carbon Africa 2023. All Right Reserved
+          </p>
         </div>
       </div>
       {/* End of Footer */}
