@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     
-    domains: ['appwrite.tikobaze.co.ke'],
+    domains: ['appwrite.tikobaze.co.ke', 'studio.tailwindui.com'],
   },
 }
 
