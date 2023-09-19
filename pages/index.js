@@ -4,7 +4,7 @@ import { ArrowSmallRightIcon } from "@heroicons/react/24/solid";
 export default function About() {
   return (
     <div>
-      <div className="lg:pt-40 p-28 ">
+      <div className="lg:pt-40 p-10 lg:p-28 ">
         <p className="font-medium text-gray-700 text-base">About Us</p>
         <p className="font-medium text-black text-5xl py-8">
           Our strength is collaboration
@@ -67,7 +67,7 @@ export default function About() {
       </div>
 
       {/* Start of Our Culture */}
-      <div className="rounded-[40px] bg-black text-white lg:pt-40 p-28 ">
+      <div className="rounded-[40px] bg-black text-white lg:pt-40 p-14 lg:p-28 ">
         <p className="font-medium  text-base">Our Culture</p>
         <p className="font-medium text-4xl py-8">
           Balance your passion with your passion for life.
@@ -113,7 +113,7 @@ export default function About() {
       {/* End of Our Culture */}
 
       {/* Start of our Team */}
-      <div className="lg:pt-40 p-28 ">
+      <div className="lg:pt-40 p-12 lg:p-28 ">
         <div className="flex gap-2">
           <div className="bg-black h-[1px] w-8" />
           <div className="bg-gray-200 h-[1.2px] w-full" />
@@ -172,7 +172,7 @@ export default function About() {
       </div>
       {/* End of our Team */}
       {/* Start of Contact */}
-      <div className="p-16 m-28 bg-black text-white rounded-3xl">
+      <div className="p-16 m-10 lg:m-28 bg-black text-white rounded-3xl">
         <p className="text-3xl">Tell us about your project</p>
         <button className="bg-white shadow-2xl shadow-white/70 rounded-full text-black px-4 py-2 text-xs font-semibold my-4">
           Say Hi!
@@ -193,7 +193,7 @@ export default function About() {
       </div>
       {/* End of Contact */}
       {/* Start of Newsletter */}
-      <div className="lg:pt-40 p-28 ">
+      <div className="lg:pt-40 p-10 lg:p-28 ">
         <p className="font-medium py-4 text-gray-700 text-md">
           Sign up for our newsletter
         </p>
@@ -216,10 +216,10 @@ export default function About() {
       {/* End of Newsletter */}
 
       {/* Start of Footer */}
-      <div className="mx-28 ">
-        <div className="flex justify-between border-t py-10 items-center">
-          <Image width={120} height={120} src={"/images/logo.png"} />
-          <p className="text-sm">
+      <div className="mx-10 lg:mx-28 ">
+        <div className="flex justify-between border-t py-4 lg:py-10 items-center">
+          <Image width={100} height={100} src={"/images/logo.png"} />
+          <p className="text-xs md:text-sm">
             © Zero Carbon Africa 2023. All Right Reserved
           </p>
         </div>
