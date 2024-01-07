@@ -1,10 +1,14 @@
 import Image from "next/image";
 import { ArrowSmallRightIcon } from "@heroicons/react/24/solid";
+import Navbar from "../components/Navigation";
+import Header from "../components/Header";
 
 export default function About() {
   return (
     <div>
-      <div className="lg:pt-40 p-10 lg:p-28 ">
+      <Navbar />
+      <Header />
+      <div className="p-10 lg:px-28 lg:pb-28">
         <p className="font-medium text-gray-700 text-base">About Us</p>
         <p className="font-medium text-black text-5xl py-8">
           Our strength is collaboration
@@ -120,14 +124,14 @@ export default function About() {
         </div>
         <p className="font-medium py-10 text-gray-700 text-2xl">The Team</p>
         <div className="flex gap-10 flex-wrap">
-          <div className="group w-[330px] h-[400px]  aspect-h-1 aspect-w-1 rounded-3xl relative before:absolute before:bottom-0 before:h-52 before:inset-x-0 ease-in-out before:z-10 transition-all duration-700 overflow-hidden before:bg-gradient-to-t before:from-black before:to-transparent">
+          {/* <div className="group w-[330px] h-[400px]  aspect-h-1 aspect-w-1 rounded-3xl relative before:absolute before:bottom-0 before:h-52 before:inset-x-0 ease-in-out before:z-10 transition-all duration-700 overflow-hidden before:bg-gradient-to-t before:from-black before:to-transparent">
             <Image
               fill
               src={
-                "https://studio.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fleslie-alexander.cf5840d1.jpg&w=3840&q=75"
+              "/images/team/dp.jpg"
               }
               alt="Front of men&#039;s Basic Tee in black."
-              className=" w-full z-2 rounded-3xl object-cover object-center h-full grayscale hover:grayscale-0 delay-500  scale-105 hover:scale-125 transition ease-in-out duration-300"
+              className=" w-full z-2 rounded-3xl object-cover object-center h-full grayscale hover:grayscale-0   scale-105 hover:scale-125 transition ease-in-out duration-300"
             />
             <div className="absolute bottom-8 left-8 text-white z-20">
               <p className="text-md lg:text-lg py-2 font-medium">
@@ -135,37 +139,34 @@ export default function About() {
               </p>
               <p className="text-xs">Founder / CEO</p>
             </div>
-          </div>
+          </div> */}
           <div className="group w-[330px] h-[400px]  aspect-h-1 aspect-w-1 rounded-3xl relative before:absolute before:bottom-0 before:h-52 before:inset-x-0 ease-in-out before:z-10 transition-all duration-700 overflow-hidden before:bg-gradient-to-t before:from-black before:to-transparent">
             <Image
               fill
               src={
-                "https://studio.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmichael-foster.00319162.jpg&w=3840&q=75"
-              }
+                "/images/team/dp.jpg"  }
               alt="Front of men&#039;s Basic Tee in black."
-              className=" w-full z-2 rounded-3xl object-cover object-center h-full grayscale hover:grayscale-0 delay-500  scale-105 hover:scale-125 transition ease-in-out duration-300"
+              className=" w-full z-2 rounded-3xl object-cover object-center h-full grayscale hover:grayscale-0   scale-105 hover:scale-125 transition ease-in-out duration-300"
             />
             <div className="absolute bottom-8 left-8 text-white z-20">
               <p className="text-md lg:text-lg py-2 font-medium">
                 Wesley Kijedi
               </p>
-              <p className="text-xs">Founder / CEO</p>
+              <p className="text-xs">Founder & CEO</p>
             </div>
           </div>{" "}
           <div className="group  w-[330px] h-[400px]  aspect-h-1 aspect-w-1 rounded-3xl relative before:absolute before:bottom-0 before:h-52 before:inset-x-0 ease-in-out before:z-10 transition-all duration-700 overflow-hidden before:bg-gradient-to-t before:from-black before:to-transparent">
             <Image
               fill
-              src={
-                "https://studio.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmichael-foster.00319162.jpg&w=3840&q=75"
-              }
+              src={ "/images/team/amadi.png"   }
               alt="Front of men&#039;s Basic Tee in black."
-              className=" w-full z-2 rounded-3xl object-cover object-center h-full grayscale hover:grayscale-0 delay-500  scale-105 hover:scale-125 transition ease-in-out duration-300"
+              className=" w-full z-2 rounded-3xl object-cover object-center h-full grayscale hover:grayscale-0   scale-105 hover:scale-125 transition ease-in-out duration-300"
             />
             <div className="absolute bottom-8 left-8 text-white z-20">
               <p className="text-md lg:text-lg py-2 font-medium">
-                Wesley Kijedi
+                Amadi Lawrence
               </p>
-              <p className="text-xs">Founder / CEO</p>
+              <p className="text-xs">Founder & CEO</p>
             </div>
           </div>
         </div>
@@ -180,14 +181,14 @@ export default function About() {
         <p className="text-md pt-10">Our Offices</p>
         <div className="flex justify-between">
           <div className="flex flex-col gap-y-1">
-            <p className="text-sm pt-10">Copenhagen</p>
-            <p className="text-xs  text-gray-400">1 Carlsberg Gate</p>
-            <p className="text-xs  text-gray-400">1260, København, Denmark</p>
+            <p className="text-sm pt-10">Kenya</p>
+            <p className="text-xs  text-gray-400">Riverside Square, Westlands</p>
+            <p className="text-xs  text-gray-400">kenya@zerocarbon.africa</p>
           </div>{" "}
           <div className="flex flex-col gap-y-1">
-            <p className="text-sm pt-10">Copenhagen</p>
-            <p className="text-xs  text-gray-400">1 Carlsberg Gate</p>
-            <p className="text-xs  text-gray-400">1260, København, Denmark</p>
+            <p className="text-sm pt-10">Ghana</p>
+            <p className="text-xs  text-gray-400">Accra</p>
+            <p className="text-xs  text-gray-400">ghana@zerocarbon.africa</p>
           </div>
         </div>
       </div>
@@ -220,7 +221,7 @@ export default function About() {
         <div className="flex justify-between border-t py-4 lg:py-10 items-center">
           <Image width={100} height={100} src={"/images/logo.png"} />
           <p className="text-xs md:text-sm">
-            © Zero Carbon Africa 2023. All Right Reserved
+            © Zero Carbon Africa 2023. All Rights Reserved
           </p>
         </div>
       </div>
