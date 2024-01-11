@@ -4,7 +4,7 @@ export default function Project1() {
   return (
     <>
       <Navbar />
-      <div className="p-10 lg:px-48 lg:py-20">
+      <div className="p-8 lg:px-48 lg:py-20">
         <div className="text-center w-full">
           <p className="font-medium py-4 lg:py-8 tracking-widest">Project</p>
           <h3 className="text-xl lg:text-5xl font-medium tracking-wide">
