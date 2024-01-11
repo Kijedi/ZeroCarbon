@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { ArrowSmallRightIcon } from "@heroicons/react/24/solid";
 import Navbar from "../components/Navigation";
 import Header from "../components/Header";
 import Projects from "../components/Projects";
+import Footer from "../components/Footer";
 
 export default function About() {
   return (
@@ -129,8 +129,7 @@ export default function About() {
           <div className="group w-[330px] h-[400px]  aspect-h-1 aspect-w-1 rounded-3xl relative before:absolute before:bottom-0 before:h-52 before:inset-x-0 ease-in-out before:z-10 transition-all duration-700 overflow-hidden before:bg-gradient-to-t before:from-black before:to-transparent">
             <Image
               fill
-              src={
-                "/images/team/dp.jpg"  }
+              src={"/images/team/dp.jpg"}
               alt="Front of men&#039;s Basic Tee in black."
               className=" w-full z-2 rounded-3xl object-cover object-center h-full grayscale hover:grayscale-0   scale-105 hover:scale-125 transition ease-in-out duration-300"
             />
@@ -144,7 +143,7 @@ export default function About() {
           <div className="group  w-[330px] h-[400px]  aspect-h-1 aspect-w-1 rounded-3xl relative before:absolute before:bottom-0 before:h-52 before:inset-x-0 ease-in-out before:z-10 transition-all duration-700 overflow-hidden before:bg-gradient-to-t before:from-black before:to-transparent">
             <Image
               fill
-              src={ "/images/team/amadi.png"   }
+              src={"/images/team/amadi.png"}
               alt="Front of men&#039;s Basic Tee in black."
               className=" w-full z-2 rounded-3xl object-cover object-center h-full grayscale hover:grayscale-0   scale-105 hover:scale-125 transition ease-in-out duration-300"
             />
@@ -168,7 +167,9 @@ export default function About() {
         <div className="flex justify-between">
           <div className="flex flex-col gap-y-1">
             <p className="text-sm pt-10">Kenya</p>
-            <p className="text-xs  text-gray-400">Riverside Square, Westlands</p>
+            <p className="text-xs  text-gray-400">
+              Riverside Square, Westlands
+            </p>
             <p className="text-xs  text-gray-400">kenya@zerocarbon.africa</p>
           </div>{" "}
           <div className="flex flex-col gap-y-1">
@@ -180,37 +181,7 @@ export default function About() {
       </div>
       {/* End of Contact */}
       {/* Start of Newsletter */}
-      <div className="lg:pt-40 p-10 lg:p-48 ">
-        <p className="font-medium py-4 text-gray-700 text-md">
-          Sign up for our newsletter
-        </p>
-        <p className="font-light  text-gray-600 text-sm max-w-md">
-          Subscribe to get the latest design news, articles, resources and
-          inspiration.
-        </p>
-
-        <div className="flex border w-fit p-1 rounded-xl my-8 border-gray-300 gap-x-8">
-          <input
-            className="form-input border-0 focus:outline-0 focus:border-0 outline-0 focus:ring-0 placeholder:text-gray-400 placeholder:text-sm"
-            type="email"
-            placeholder="Email address"
-          />
-          <button className="h-12 w-12 bg-black text-white p-4 rounded-xl">
-            <ArrowSmallRightIcon className="text-white" />
-          </button>
-        </div>
-      </div>
-      {/* End of Newsletter */}
-
-      {/* Start of Footer */}
-      <div className="mx-10 lg:mx-48 ">
-        <div className="flex justify-between border-t py-4 lg:py-10 items-center">
-          <Image width={100} height={100} src={"/images/logo.png"} />
-          <p className="text-xs md:text-sm">
-            © Zero Carbon Africa 2023. All Rights Reserved
-          </p>
-        </div>
-      </div>
+      <Footer />
       {/* End of Footer */}
     </div>
   );

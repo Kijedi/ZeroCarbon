@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer";
 import Navbar from "../../components/Navigation";
 import Image from "next/image";
 export default function Project1() {
@@ -123,6 +124,7 @@ export default function Project1() {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }
