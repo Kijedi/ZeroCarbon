@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <div className="p-10 lg:p-28 ">
       <div className="lg:flex gap-x-8">
-        <h1 className="text-3xl lg:text-6xl font-medium text-black font-semibold flex-1">
+        <h1 className="text-3xl lg:text-6xl text-black font-semibold flex-1">
           Empowering Africa: Zero Carbon, Infinite Possibilities.
         </h1>
         <div className="flex-1 pt-8 lg:pt-0">

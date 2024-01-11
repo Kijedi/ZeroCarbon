@@ -8,27 +8,10 @@ import {
 } from "@heroicons/react/24/outline";
 
 const locations = [
-  { name: "Nairobi", href: "#" },
-  { name: "Nakuru", href: "#" },
-  { name: "Eldoret", href: "#" },
-  { name: "Kisumu", href: "#" },
-  { name: "Mombasa", href: "#" },
+  { name: "BMT", href: "#" },
+  { name: "EAYA", href: "/project/EAYA" }
 ];
 
-const category = [
-  { name: "Photography" },
-  { name: "Conference halls" },
-  { name: "Livestreaming" },
-  { name: "Workspaces" },
-];
-
-const callsToAction = [
-  {
-    name: "Watch demo",
-    href: "#",
-    //   { name: 'Contact sales', href: '#', icon: PhoneIcon },
-  },
-];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -46,7 +29,7 @@ export default function Navbar() {
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">ZeroCarbon</span>
             <img
-              className="h-8 lg:h-20 w-auto"
+              className="h-16 lg:h-20 w-auto"
               src="/images/logo.png"
               alt="logo"
             />
@@ -139,7 +122,7 @@ export default function Navbar() {
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Nyumbani</span>
+              <span className="sr-only">ZeroCarbon</span>
               <img className="h-12 w-auto" src="/images/logo.png" alt="logo" />
             </a>
             <button
@@ -160,11 +143,17 @@ export default function Navbar() {
                 >
                   Home
                 </Link>
+                <a
+                  href="#"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  About Us
+                </a>
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50">
-                        Cribs by Destination{" "}
+                        Projects{" "}
                         <ChevronDownIcon
                           className={classNames(
                             open ? "rotate-180" : "",
@@ -188,45 +177,11 @@ export default function Navbar() {
                     </>
                   )}
                 </Disclosure>{" "}
-                <Disclosure as="div" className="-mx-3">
-                  {({ open }) => (
-                    <>
-                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50">
-                        Cribs by Category{" "}
-                        <ChevronDownIcon
-                          className={classNames(
-                            open ? "rotate-180" : "",
-                            "h-5 w-5 flex-none"
-                          )}
-                          aria-hidden="true"
-                        />
-                      </Disclosure.Button>
-                      <Disclosure.Panel className="mt-2 space-y-2">
-                        {[...category, ...callsToAction].map((item) => (
-                          <Disclosure.Button
-                            key={item.name}
-                            as="a"
-                            href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                          >
-                            {item.name}
-                          </Disclosure.Button>
-                        ))}
-                      </Disclosure.Panel>
-                    </>
-                  )}
-                </Disclosure>
                 <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Our Recommendation
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  About Us
+                  Contact Us
                 </a>
                 {/* <Link href="/login">
                   <button className="bg-[#00BE89] px-3 py-2 mt-4 text-white rounded-md">

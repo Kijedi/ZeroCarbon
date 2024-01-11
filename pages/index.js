@@ -2,13 +2,15 @@ import Image from "next/image";
 import { ArrowSmallRightIcon } from "@heroicons/react/24/solid";
 import Navbar from "../components/Navigation";
 import Header from "../components/Header";
+import Projects from "../components/Projects";
 
 export default function About() {
   return (
-    <div>
+    <div className="">
       <Navbar />
       <Header />
-      <div className="p-10 lg:px-28 lg:pb-28">
+      <Projects />
+      <div className="p-10 lg:px-48 lg:pb-28">
         <p className="font-medium text-gray-700 text-base">About Us</p>
         <p className="font-medium text-black text-5xl py-8">
           Our strength is collaboration
@@ -71,7 +73,7 @@ export default function About() {
       </div>
 
       {/* Start of Our Culture */}
-      <div className="rounded-[40px] bg-black text-white lg:pt-40 p-14 lg:p-28 ">
+      <div className="rounded-[60px] bg-black text-white lg:pt-40 p-14 lg:p-48 ">
         <p className="font-medium  text-base">Our Culture</p>
         <p className="font-medium text-4xl py-8">
           Balance your passion with your passion for life.
@@ -117,29 +119,13 @@ export default function About() {
       {/* End of Our Culture */}
 
       {/* Start of our Team */}
-      <div className="lg:pt-40 p-12 lg:p-28 ">
+      <div className="lg:pt-40 p-12 lg:p-48 ">
         <div className="flex gap-2">
           <div className="bg-black h-[1px] w-8" />
           <div className="bg-gray-200 h-[1.2px] w-full" />
         </div>
         <p className="font-medium py-10 text-gray-700 text-2xl">The Team</p>
         <div className="flex gap-10 flex-wrap">
-          {/* <div className="group w-[330px] h-[400px]  aspect-h-1 aspect-w-1 rounded-3xl relative before:absolute before:bottom-0 before:h-52 before:inset-x-0 ease-in-out before:z-10 transition-all duration-700 overflow-hidden before:bg-gradient-to-t before:from-black before:to-transparent">
-            <Image
-              fill
-              src={
-              "/images/team/dp.jpg"
-              }
-              alt="Front of men&#039;s Basic Tee in black."
-              className=" w-full z-2 rounded-3xl object-cover object-center h-full grayscale hover:grayscale-0   scale-105 hover:scale-125 transition ease-in-out duration-300"
-            />
-            <div className="absolute bottom-8 left-8 text-white z-20">
-              <p className="text-md lg:text-lg py-2 font-medium">
-                Wesley Kijedi
-              </p>
-              <p className="text-xs">Founder / CEO</p>
-            </div>
-          </div> */}
           <div className="group w-[330px] h-[400px]  aspect-h-1 aspect-w-1 rounded-3xl relative before:absolute before:bottom-0 before:h-52 before:inset-x-0 ease-in-out before:z-10 transition-all duration-700 overflow-hidden before:bg-gradient-to-t before:from-black before:to-transparent">
             <Image
               fill
@@ -173,7 +159,7 @@ export default function About() {
       </div>
       {/* End of our Team */}
       {/* Start of Contact */}
-      <div className="p-16 m-10 lg:m-28 bg-black text-white rounded-3xl">
+      <div className="p-16 m-10 lg:m-48 bg-black text-white rounded-3xl">
         <p className="text-3xl">Tell us about your project</p>
         <button className="bg-white shadow-2xl shadow-white/70 rounded-full text-black px-4 py-2 text-xs font-semibold my-4">
           Say Hi!
@@ -194,7 +180,7 @@ export default function About() {
       </div>
       {/* End of Contact */}
       {/* Start of Newsletter */}
-      <div className="lg:pt-40 p-10 lg:p-28 ">
+      <div className="lg:pt-40 p-10 lg:p-48 ">
         <p className="font-medium py-4 text-gray-700 text-md">
           Sign up for our newsletter
         </p>
@@ -217,7 +203,7 @@ export default function About() {
       {/* End of Newsletter */}
 
       {/* Start of Footer */}
-      <div className="mx-10 lg:mx-28 ">
+      <div className="mx-10 lg:mx-48 ">
         <div className="flex justify-between border-t py-4 lg:py-10 items-center">
           <Image width={100} height={100} src={"/images/logo.png"} />
           <p className="text-xs md:text-sm">
