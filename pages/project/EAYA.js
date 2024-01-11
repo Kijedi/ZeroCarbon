@@ -83,7 +83,7 @@ export default function Project1() {
                 Technical and Strategy Manager
               </p>
               <p className="text-gray-500 text-sm leading-6 tracking-wide text-justify">
-                I'm Paul Brian—an author, cybersecurity enthusiast, and advocate
+                I&apos;m Paul Brian—an author, cybersecurity enthusiast, and advocate
                 for technology governance, deeply involved in Eco-Agriculture.
                 Through my written works in technology governance and
                 cybersecurity, I aim to bridge the gap between secure digital
@@ -92,7 +92,7 @@ export default function Project1() {
                 to empower individuals in both cybersecurity and
                 Eco-Agriculture. My mission is to not only fortify digital
                 landscapes but also cultivate a greener, more sustainable future
-                through eco-friendly agricultural practices. I'm dedicated to
+                through eco-friendly agricultural practices. I&apos;m dedicated to
                 sharing insights that merge the realms of cybersecurity and
                 Eco-Agriculture, fostering a more secure and environmentally
                 conscious world.
