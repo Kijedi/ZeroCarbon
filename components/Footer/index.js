@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <>
-      <div className="lg:pt-40 p-10 lg:p-48 ">
+      <div className="lg:pt-20 p-4 lg:px-48 ">
         <p className="font-medium py-4 text-gray-700 text-md">
           Sign up for our newsletter
         </p>

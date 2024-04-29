@@ -11,7 +11,7 @@ export default function About() {
       <Navbar />
       <Header />
       <Projects />
-      <div className="p-10 lg:px-48 lg:pb-28">
+      <div className="p-5 lg:px-48 lg:pb-28">
         <p className="font-medium text-gray-700 text-base">About Us</p>
         <p className="font-medium text-black text-5xl py-8">
           Traceable, transparent, transformative
@@ -74,7 +74,7 @@ export default function About() {
       </div>
 
       {/* Start of Our Culture */}
-      <div className="rounded-[60px] bg-black text-white lg:pt-40 p-14 lg:p-48 ">
+      <div className="rounded-[60px] bg-black text-white  lg:pt-40 p-8 lg:p-48 ">
         <p className="font-medium  text-base">Our Values</p>
         <p className="font-medium text-4xl py-8">
           Empowerment. Transparency. Sustainability.
@@ -84,7 +84,7 @@ export default function About() {
           at Zero Carbon, ours focus on...
         </p>
         <div className="flex gap-5 flex-wrap justify-between">
-          <div className="flex gap-8 mt-10 w-2/5">
+          <div className="flex gap-8 mt-10 w-full lg:w-2/5">
             <div className="flex flex-col">
               <div className="bg-white h-5 w-[1px] "></div>
               <div className="bg-white/40 h-16 w-[0.8px]"></div>
@@ -95,7 +95,7 @@ export default function About() {
               thrive in the carbon market.
             </p>
           </div>{" "}
-          <div className="flex gap-8 mt-10 w-2/5">
+          <div className="flex gap-8 mt-10 w-full lg:w-2/5">
             <div className="flex flex-col">
               <div className="bg-white h-5 w-[1px] "></div>
               <div className="bg-white/40 h-16 w-[0.8px]"></div>
@@ -106,7 +106,7 @@ export default function About() {
               for carbon credit generation and share earnings.
             </p>
           </div>{" "}
-          <div className="flex gap-8 mt-10 w-2/5">
+          <div className="flex gap-8 mt-10 w-full lg:w-2/5">
             <div className="flex flex-col">
               <div className="bg-white h-5 w-[1px] "></div>
               <div className="bg-white/40 h-16 w-[0.8px]"></div>
@@ -130,7 +130,10 @@ export default function About() {
         <p className="font-medium py-10 text-gray-700 text-2xl">The Team</p>
         <div className="flex gap-10 flex-wrap">
           {team.map((member, index) => (
-            <div key={index} className="group w-[330px] h-[400px]  aspect-h-1 aspect-w-1 rounded-3xl relative before:absolute before:bottom-0 before:h-52 before:inset-x-0 ease-in-out before:z-10 transition-all duration-700 overflow-hidden before:bg-gradient-to-t before:from-black before:to-transparent">
+            <div
+              key={index}
+              className="group w-[330px] h-[400px]  aspect-h-1 aspect-w-1 rounded-3xl relative before:absolute before:bottom-0 before:h-52 before:inset-x-0 ease-in-out before:z-10 transition-all duration-700 overflow-hidden before:bg-gradient-to-t before:from-black before:to-transparent"
+            >
               <Image
                 fill
                 src={member.image}
@@ -177,7 +180,7 @@ export default function About() {
       </div>
       {/* End of our Team */}
       {/* Start of Contact */}
-      <div className="p-16 m-10 lg:m-48 bg-black text-white rounded-3xl">
+      <div className="px-5 py-12 m-2 lg:p-20 lg:m-10 bg-black text-white rounded-3xl">
         <p className="text-3xl">Tell us about your project</p>
         <button className="bg-white shadow-2xl shadow-white/70 rounded-full text-black px-4 py-2 text-xs font-semibold my-4">
           Say Hi!

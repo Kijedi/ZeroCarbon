@@ -5,7 +5,7 @@ import { ProjectCard } from "./card";
 export default function Projects() {
   const router = useRouter();
   return (
-    <div className="p-10 lg:px-48 lg:pb-28">
+    <div className="p-5 lg:px-48 lg:pb-28">
       <p className="font-medium text-gray-700 text-base">Our Projects</p>
       <p className="font-medium text-black text-3xl lg:text-5xl lg:w-1/2 py-8">
         Growing a Greener Future
