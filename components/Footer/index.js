@@ -24,7 +24,6 @@ export default function Footer() {
         </div>
       </div>
       {/* End of Newsletter */}
-
       {/* Start of Footer */}
       <div className="mx-10 lg:mx-48 ">
         <div className="flex justify-between border-t py-4 lg:py-10 items-center">
