@@ -129,8 +129,8 @@ export default function About() {
         </div>
         <p className="font-medium py-10 text-gray-700 text-2xl">The Team</p>
         <div className="flex gap-10 flex-wrap">
-          {team.map((member) => (
-            <div className="group w-[330px] h-[400px]  aspect-h-1 aspect-w-1 rounded-3xl relative before:absolute before:bottom-0 before:h-52 before:inset-x-0 ease-in-out before:z-10 transition-all duration-700 overflow-hidden before:bg-gradient-to-t before:from-black before:to-transparent">
+          {team.map((member, index) => (
+            <div key={index} className="group w-[330px] h-[400px]  aspect-h-1 aspect-w-1 rounded-3xl relative before:absolute before:bottom-0 before:h-52 before:inset-x-0 ease-in-out before:z-10 transition-all duration-700 overflow-hidden before:bg-gradient-to-t before:from-black before:to-transparent">
               <Image
                 fill
                 src={member.image}

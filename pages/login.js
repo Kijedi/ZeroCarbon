@@ -84,7 +84,7 @@ function SignIn() {
                 <input
                   id="email"
                   type="email"
-                  autocomplete="off"
+                  autoComplete="off"
                   className="form-input text-gray-800 rounded-sm p-2 w-full border text-sm "
                   placeholder="Enter your email"
                   onChange={(e) => setEmail(e.target.value)}
@@ -104,7 +104,7 @@ function SignIn() {
                 <input
                   id="password"
                   type="password"
-                  autocomplete="off"
+                  autoComplete="off"
                   className="form-input text-gray-800 rounded-sm p-2 w-full border text-sm "
                   placeholder="Enter your email"
                   onChange={(e) => setPassword(e.target.value)}
