@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -10,12 +11,14 @@ export default function Header() {
         <div className="flex-1 pt-8 lg:pt-0">
           <h4 className="text-lg xl:text-2xl">
             A comprehensive platform to address the challenges in the untapped
-            carbon trading market in AFRICA and the lack of
-            regulatory frameworks.
+            carbon trading market in AFRICA and the lack of regulatory
+            frameworks.
           </h4>
-          <button className="mt-10 rounded-lg shadow-lg px-10 py-2 bg-[#37ad90] text-white">
-            Join Us Now
-          </button>
+          <Link href={"/login"}>
+            <button className="mt-10 rounded-lg shadow-lg px-10 py-2 bg-[#37ad90] text-white">
+              Join Us Now
+            </button>
+          </Link>
         </div>
       </div>{" "}
       <div className="h-[300px] lg:h-[600px] w-full relative  flex items-center mt-16 lg:mt-28">

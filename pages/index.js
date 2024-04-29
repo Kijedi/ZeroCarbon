@@ -3,6 +3,7 @@ import Navbar from "../components/Navigation";
 import Header from "../components/Header";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
+import { team } from "../components/Data/team";
 
 export default function About() {
   return (
@@ -13,24 +14,22 @@ export default function About() {
       <div className="p-10 lg:px-48 lg:pb-28">
         <p className="font-medium text-gray-700 text-base">About Us</p>
         <p className="font-medium text-black text-5xl py-8">
-          Our strength is collaboration
+          Traceable, transparent, transformative
         </p>
         <p className="font-light text-lg text-gray-500 -tracking-tighter">
-          We believe that our strength lies in our collaborative approach, which
-          puts our clients at the center of everything we do.
+          We aim to unlock the potential of carbon trading markets in developing
+          countries by creating a platform that empowers smallholder farmers by
+          registering and tracking their contributions to carbon sequestration
+          and decarbonization efforts, while ensuring fair compensation and
+          transparent share earnings. This platform helps farmers participate in
+          the carbon trading market and contributes to global climate change
+          mitigation efforts.
         </p>
-
         <p className="font-normal tracking-wide leading-relaxed text-sm pt-10 text-gray-800">
-          Studio was started by three friends who noticed that developer studios
-          were charging clients double what an in-house team would cost. Since
-          the beginning, we have been committed to doing things differently by
-          charging triple instead.
-          <br />
-          <br />
-          At Studio, we’re more than just colleagues — we’re a family. This
-          means we pay very little and expect people to work late. We want our
-          employees to bring their whole selves to work. In return, we just ask
-          that they keep themselves there until at least 6:30pm.
+          We bridge the gap between smallholder farmers and the global carbon
+          market. We believe farmers deserve fair compensation for their role in
+          combating climate change. Our innovative platform empowers them to
+          participate in carbon trading with transparency and security.
         </p>
         <div className="flex gap-5 flex-wrap justify-between">
           <div className="flex gap-8 mt-10 w-1/3">
@@ -39,9 +38,9 @@ export default function About() {
               <div className="bg-gray-300 h-10 w-[1px]"></div>
             </div>
             <div>
-              <p className="text-3xl font-medium">35</p>
+              <p className="text-3xl font-medium">350</p>
               <p className="text-lg pt-2 font-thin text-gray-700">
-                Underpaid employees
+                Smallholders Farmers Onboarded
               </p>
             </div>
           </div>
@@ -51,9 +50,11 @@ export default function About() {
               <div className="bg-gray-300 h-10 w-[1px]"></div>
             </div>
             <div>
-              <p className="text-3xl font-medium">52</p>
+              <p className="text-3xl font-medium">
+                0.8 MtCO<sub>2</sub>e
+              </p>
               <p className="text-lg pt-2 font-thin text-gray-700">
-                Placated clients
+                Carbon Offseted
               </p>
             </div>
           </div>{" "}
@@ -63,9 +64,9 @@ export default function About() {
               <div className="bg-gray-300 h-10 w-[1px]"></div>
             </div>
             <div>
-              <p className="text-3xl font-medium">$100M</p>
+              <p className="text-3xl font-medium">$0.1M</p>
               <p className="text-lg pt-2 font-thin text-gray-700">
-                Invoices billed
+                Farmers paid
               </p>
             </div>
           </div>
@@ -74,12 +75,13 @@ export default function About() {
 
       {/* Start of Our Culture */}
       <div className="rounded-[60px] bg-black text-white lg:pt-40 p-14 lg:p-48 ">
-        <p className="font-medium  text-base">Our Culture</p>
+        <p className="font-medium  text-base">Our Values</p>
         <p className="font-medium text-4xl py-8">
-          Balance your passion with your passion for life.
+          Empowerment. Transparency. Sustainability.
         </p>
         <p className="font-light text-lg text-gray-300">
-          We are a group of like-minded people who share the same core values.
+          Building a better future requires a commitment to strong values. Here
+          at Zero Carbon, ours focus on...
         </p>
         <div className="flex gap-5 flex-wrap justify-between">
           <div className="flex gap-8 mt-10 w-2/5">
@@ -88,9 +90,9 @@ export default function About() {
               <div className="bg-white/40 h-16 w-[0.8px]"></div>
             </div>
             <p className="text-white/70 text-sm leading-relaxed font-light">
-              <span className="text-white">Loyalty.</span> Our team has been
-              with us since the beginning because none of them are allowed to
-              have LinkedIn profiles.
+              <span className="text-white">Empowerment.</span> We believe in
+              equipping smallholder farmers with the tools and knowledge to
+              thrive in the carbon market.
             </p>
           </div>{" "}
           <div className="flex gap-8 mt-10 w-2/5">
@@ -99,8 +101,9 @@ export default function About() {
               <div className="bg-white/40 h-16 w-[0.8px]"></div>
             </div>
             <p className="text-white/70 text-sm leading-relaxed font-light">
-              <span className="text-white">Trust.</span> We don’t care when our
-              team works just as long as they are working every waking second.
+              <span className="text-white">Transparency.</span> We ensure fair
+              compensation for farmers by providing a clear and traceable system
+              for carbon credit generation and share earnings.
             </p>
           </div>{" "}
           <div className="flex gap-8 mt-10 w-2/5">
@@ -109,9 +112,9 @@ export default function About() {
               <div className="bg-white/40 h-16 w-[0.8px]"></div>
             </div>
             <p className="text-white/70 text-sm leading-relaxed font-light">
-              <span className="text-white">Compassion.</span> You never know
-              what someone is going through at home and we make sure to never
-              find out.
+              <span className="text-white">Sustainability.</span> We promote
+              environmentally-friendly practices by rewarding farmers for their
+              contributions to carbon sequestration. find out.
             </p>
           </div>
         </div>
@@ -126,7 +129,23 @@ export default function About() {
         </div>
         <p className="font-medium py-10 text-gray-700 text-2xl">The Team</p>
         <div className="flex gap-10 flex-wrap">
-          <div className="group w-[330px] h-[400px]  aspect-h-1 aspect-w-1 rounded-3xl relative before:absolute before:bottom-0 before:h-52 before:inset-x-0 ease-in-out before:z-10 transition-all duration-700 overflow-hidden before:bg-gradient-to-t before:from-black before:to-transparent">
+          {team.map((member) => (
+            <div className="group w-[330px] h-[400px]  aspect-h-1 aspect-w-1 rounded-3xl relative before:absolute before:bottom-0 before:h-52 before:inset-x-0 ease-in-out before:z-10 transition-all duration-700 overflow-hidden before:bg-gradient-to-t before:from-black before:to-transparent">
+              <Image
+                fill
+                src={member.image}
+                alt="Front of men&#039;s Basic Tee in black."
+                className=" w-full z-2 rounded-3xl object-cover object-center h-full grayscale hover:grayscale-0   scale-105 hover:scale-125 transition ease-in-out duration-300"
+              />
+              <div className="absolute bottom-8 left-8 text-white z-20">
+                <p className="text-md lg:text-lg py-2 font-medium">
+                  {member.name}
+                </p>
+                <p className="text-xs">{member.position}</p>
+              </div>
+            </div>
+          ))}
+          {/* <div className="group w-[330px] h-[400px]  aspect-h-1 aspect-w-1 rounded-3xl relative before:absolute before:bottom-0 before:h-52 before:inset-x-0 ease-in-out before:z-10 transition-all duration-700 overflow-hidden before:bg-gradient-to-t before:from-black before:to-transparent">
             <Image
               fill
               src={"/images/team/dp.jpg"}
@@ -153,7 +172,7 @@ export default function About() {
               </p>
               <p className="text-xs">Founder & CEO</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* End of our Team */}
