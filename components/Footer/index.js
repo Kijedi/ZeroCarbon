@@ -1,13 +1,14 @@
-import { ArrowSmallRightIcon } from "@heroicons/react/24/solid";
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+
 export default function Footer() {
   return (
     <>
-      <div className="lg:pt-20 p-4 lg:px-48 ">
+      <div className="lg:pt-20 p-4 lg:px-48">
         <p className="font-medium py-4 text-gray-700 text-md">
           Sign up for our newsletter
         </p>
-        <p className="font-light  text-gray-600 text-sm max-w-md">
+        <p className="font-light text-gray-600 text-sm max-w-md">
           Subscribe to get the latest design news, articles, resources and
           inspiration.
         </p>
@@ -18,17 +19,21 @@ export default function Footer() {
             placeholder="Email address"
           />
           <button className="h-12 w-12 bg-black text-white p-4 rounded-xl">
-            <ArrowSmallRightIcon className="text-white" />
+            <ArrowRightIcon className="text-white" />
           </button>
         </div>
       </div>
-      {/* End of Newsletter */}
-      {/* Start of Footer */}
       <div className="mx-10 lg:mx-48">
         <div className="flex justify-between border-t py-4 lg:py-10 items-center">
-          <Image width={100} height={100} src={"/images/logo.png"} />
+          <Image
+            width={100}
+            height={100}
+            src="/images/logo.png"
+            alt="Zero Carbon logo"
+          />
           <p className="text-xs md:text-sm">
-            {new Date().getFullYear()} © Zero Carbon Africa. All Rights Reserved
+            {new Date().getFullYear()} © Zero Carbon Africa. All Rights
+            Reserved
           </p>
         </div>
       </div>

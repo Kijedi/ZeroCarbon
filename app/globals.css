@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+
+@theme {
+  --font-sans: var(--font-mona);
+
+  --color-buttercup: #F59E0B;
+  --color-primary: #00695c;
+
+  --animate-fade: fadeOut 5s ease-in-out;
+
+  @keyframes fadeOut {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+}
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}

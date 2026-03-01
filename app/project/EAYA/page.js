@@ -1,7 +1,8 @@
-import Footer from "../../components/Footer";
-import Navbar from "../../components/Navigation";
+import Footer from "../../../components/Footer";
+import Navbar from "../../../components/Navigation";
 import Image from "next/image";
-export default function Project1() {
+
+export default function EAYAProject() {
   return (
     <>
       <Navbar />
@@ -10,7 +11,7 @@ export default function Project1() {
           <p className="font-medium py-4 lg:py-8 tracking-widest">Project</p>
           <h3 className="text-xl lg:text-5xl font-medium tracking-wide">
             Eco-Agriculture Youth Alliance (EAYA)
-          </h3>{" "}
+          </h3>
           <p className="text-gray-500 leading-7 lg:text-lg tracking-wide lg:px-64 py-10">
             EAYA stands tall as a youth-driven movement, laser-focused on
             empowering the next generation and championing women in the realm of
@@ -18,10 +19,11 @@ export default function Project1() {
             and women, envisaging a world where sustainable Agriculture thrives,
             ensuring food security for all.
           </p>
-          <div className="h-[300px] lg:h-[600px] w-full relative  flex items-center mt-8 lg:mt-10">
+          <div className="h-[300px] lg:h-[600px] w-full relative flex items-center mt-8 lg:mt-10">
             <Image
               fill
-              src={"/images/projects/EAYA.jpeg"}
+              src="/images/projects/EAYA.jpeg"
+              alt="EAYA project"
               className="absolute h-full w-full object-cover grayscale brightness-75 contrast-125 rounded-2xl"
             />
           </div>
@@ -29,23 +31,24 @@ export default function Project1() {
         <div className="lg:px-48 py-20">
           <h3 className="text-xl lg:text-2xl font-semibold tracking-wide">
             Mission
-          </h3>{" "}
+          </h3>
           <p className="text-gray-500 leading-7 lg:text-lg tracking-wide py-10 text-justify">
             We aim to ignite the potential within youth and women, propelling
             them to the forefront of sustainable Agriculture. Picture this:
             fostering eco-friendly practices that not only amplify livelihoods
             but also preserve and safeguard our precious planet.
-          </p>{" "}
+          </p>
         </div>
         <div className="lg:px-48">
           <h3 className="text-xl lg:text-2xl font-semibold tracking-wide">
             Team
-          </h3>{" "}
+          </h3>
           <div className="lg:flex items-center gap-10 mt-20">
             <div className="w-72 h-96 relative border rounded-xl">
               <Image
-                src={"/images/team/odero.jpeg"}
+                src="/images/team/odero.jpeg"
                 fill
+                alt="Dennis Odero"
                 className="object-cover grayscale rounded-xl"
               />
             </div>
@@ -59,7 +62,7 @@ export default function Project1() {
                 building a resilient, sustainable and prosperous agricultural
                 sector in Africa and around the world. This passion has driven
                 Dennis to start Eco-Agriculture Youth Alliance (EAYA) of which
-                he is now the Executive Director. The teams’ in 47 counties work
+                he is now the Executive Director. The teams&apos; in 47 counties work
                 to raise awareness about Climate Smart Agriculture among young
                 men and women, educating them for the benefits of sustainable
                 approaches in increasing agricultural yields and resilience in
@@ -69,12 +72,13 @@ export default function Project1() {
                 100 secondary schools in Kenya.
               </p>
             </div>
-          </div>{" "}
+          </div>
           <div className="lg:flex gap-10 mt-20">
             <div className="w-72 h-96 relative border rounded-xl">
               <Image
-                src={"/images/team/paul.jpeg"}
+                src="/images/team/paul.jpeg"
                 fill
+                alt="Paul Brian"
                 className="object-cover grayscale rounded-xl"
               />
             </div>
@@ -101,10 +105,11 @@ export default function Project1() {
             </div>
           </div>
           <div className="lg:flex gap-10 mt-20">
-            <div className="w-72 h-96 relative border ">
+            <div className="w-72 h-96 relative border rounded-xl">
               <Image
-                src={"/images/team/cleophas.jpeg"}
+                src="/images/team/cleophas.jpeg"
                 fill
+                alt="Cleophas Khasakhala"
                 className="object-cover grayscale rounded-xl"
               />
             </div>
@@ -124,7 +129,7 @@ export default function Project1() {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }
