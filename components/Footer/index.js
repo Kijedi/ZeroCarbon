@@ -1,42 +1,58 @@
-import { ArrowRightIcon } from "@heroicons/react/24/solid";
+import Link from "next/link";
 import Image from "next/image";
+
+const footerLinks = [
+  { name: "Home", href: "/" },
+  { name: "How It Works", href: "/#how-it-works" },
+  { name: "For Investors", href: "/investors" },
+  { name: "Projects", href: "/project/EAYA" },
+  { name: "Contact", href: "/#contact" },
+];
 
 export default function Footer() {
   return (
-    <>
-      <div className="lg:pt-20 p-4 lg:px-48">
-        <p className="font-medium py-4 text-gray-700 text-md">
-          Sign up for our newsletter
-        </p>
-        <p className="font-light text-gray-600 text-sm max-w-md">
-          Subscribe to get the latest design news, articles, resources and
-          inspiration.
-        </p>
-        <div className="flex border w-fit p-1 rounded-xl my-8 border-gray-300 gap-x-8">
-          <input
-            className="form-input border-0 focus:outline-0 focus:border-0 outline-0 focus:ring-0 placeholder:text-gray-400 placeholder:text-sm"
-            type="email"
-            placeholder="Email address"
-          />
-          <button className="h-12 w-12 bg-black text-white p-4 rounded-xl">
-            <ArrowRightIcon className="text-white" />
-          </button>
-        </div>
-      </div>
-      <div className="mx-10 lg:mx-48">
-        <div className="flex justify-between border-t py-4 lg:py-10 items-center">
+    <footer className="px-5 lg:px-20 xl:px-28 pt-16 pb-8">
+      <div className="flex flex-col lg:flex-row justify-between gap-10 pb-10 border-b border-gray-200">
+        <div>
           <Image
-            width={100}
-            height={100}
+            width={120}
+            height={120}
             src="/images/logo.png"
-            alt="Zero Carbon logo"
+            alt="ZeroCarbon Africa logo"
           />
-          <p className="text-xs md:text-sm">
-            {new Date().getFullYear()} © Zero Carbon Africa. All Rights
-            Reserved
+          <p className="mt-4 text-sm text-gray-500 font-light max-w-xs leading-relaxed">
+            Connecting African smallholder farmers to global carbon markets.
           </p>
         </div>
+        <div className="flex flex-wrap gap-x-10 gap-y-3">
+          {footerLinks.map((link) => (
+            <Link
+              key={link.name}
+              href={link.href}
+              className="text-sm text-gray-600 hover:text-primary transition-colors duration-150"
+            >
+              {link.name}
+            </Link>
+          ))}
+        </div>
+        <div>
+          <p className="text-sm font-medium text-gray-700 mb-2">Get in touch</p>
+          <a
+            href="mailto:jammutsami@gmail.com"
+            className="text-sm text-gray-500 hover:text-primary transition-colors"
+          >
+            jammutsami@gmail.com
+          </a>
+        </div>
       </div>
-    </>
+      <div className="flex flex-col sm:flex-row justify-between items-center pt-8 gap-4">
+        <p className="text-xs text-gray-400">
+          {new Date().getFullYear()} &copy; ZeroCarbon Africa. All Rights Reserved.
+        </p>
+        <p className="text-xs text-gray-400">
+          zerocarbon.africa
+        </p>
+      </div>
+    </footer>
   );
 }

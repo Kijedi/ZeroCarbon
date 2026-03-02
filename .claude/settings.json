@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install -D @tailwindcss/postcss)",
+      "Bash(lsof -i :3000 -P -n)",
+      "Bash(npx next dev -p 3001)",
+      "mcp__plugin_playwright_playwright__browser_wait_for",
+      "Bash(lsof -i :3001 -i :3002 -i :3003 -P -n)",
+      "Bash(npx next dev -p 3003)"
+    ]
+  }
+}
